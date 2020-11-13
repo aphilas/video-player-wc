@@ -173,7 +173,7 @@
 
     .controls {
       padding: .5em;
-      background-color: rgba(50, 50, 50, .5);
+      background-color: rgba(50, 50, 50, .3);
       transition: .5s all;
     }
 
@@ -239,12 +239,12 @@
       height: 5px;
       cursor: pointer;
       border-radius: 5px;
-      background: linear-gradient(#4600FF, #4600FF) no-repeat rgba(50, 50, 50, .5);
+      background: linear-gradient(#4600FF, #4600FF) no-repeat rgba(50, 50, 50, .3);
       background-size: var(--track-bg-size) 100%;
     }
 
     input[type=range]:focus::-webkit-slider-runnable-track {
-      background: linear-gradient(#4600FF, #4600FF) no-repeat rgba(50, 50, 50, .5);
+      background: linear-gradient(#4600FF, #4600FF) no-repeat rgba(50, 50, 50, .3);
       background-size: var(--track-bg-size) 100%;
     }
 
@@ -254,11 +254,12 @@
 
     /* volume */
 
-    input[type=range].volume_slider::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+    input[type=range].volume-slider::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
       background-size: var(--track-bg-size) 100%;
     }
 
-    input[type=range].volume_slider::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+    input[type=range].volume-slider::-webkit-slider-runnable-track, input[type=range].volume-slider::-moz-range-track, input[type=range].volume-slider:focus::-webkit-slider-runnable-track {
+      background: linear-gradient(rgba(50, 50, 50, .6), rgba(50, 50, 50, .6)) no-repeat rgba(50, 50, 50, .3);
       background-size: var(--track-bg-size) 100%;
     }
   </style>
