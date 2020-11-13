@@ -17,7 +17,7 @@
       <button class="play-pause">P</button>
       <button class="play-clip">C</button>
 
-      <button class="mute">U</button>
+      <button class="mute">M</button>
       <input type="range" class="volume-slider" value="100">
 
       <span class="timer">00:00</span>
@@ -147,7 +147,7 @@
     })
 
     videoEl.addEventListener('volumechange', _ => {
-      muteEl.textContent = videoEl.muted ? 'M' : 'U' // update icons
+      muteEl.textContent = videoEl.volume == 0 ? 'U' : 'M' // update icons
 
       if ((volumeSlider.value / 100) != videoEl.volume) {
         volumeSlider.value = videoEl.volume * 100
